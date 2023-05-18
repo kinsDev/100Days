@@ -8,12 +8,12 @@
 
 /**You can also change the value of an intialized variable*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main(void){
     int age = 0;
     age = 22;
     printf("%u", age);
-}*/
+}
 
 /**what's the work of the "%u"? I guess you gonna have to stick around to find out - that is ofcourse if you don't google😂*/
 /**What are the c built in data types:
@@ -35,28 +35,28 @@ int main(void){
 
 /**what happens when you overflow?*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main(void){
     unsigned char j = 255;
     j = j + 10;
     printf("%u", j);
-}*/
+}
 
 /**With a signed value, the behaviour is undefined*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main(void){
     char k = 127;
     k = k + 10;
     printf("%u", k);
-}*/
+}
 
 /**With the three illustrated examplea above, i have realised that C does not support me from going over the limits, so I have to p[rotect myself on that.]*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main(void){
     char j = 128;
-}*/
+}
 
 /**Check the size of types on your device*/
 
