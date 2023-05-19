@@ -1,0 +1,42 @@
+/*Source from Freecodecamp
+SPECIFIER	USED FOR
+%c	a single character
+%s	a string
+%hi	short (signed)
+%hu	short (unsigned)
+%Lf	long double
+%n	prints nothing
+%d	a decimal integer (assumes base 10)
+%i	a decimal integer (detects the base automatically)
+%o	an octal (base 8) integer
+%x	a hexadecimal (base 16) integer
+%p	an address (or pointer)
+%f	a floating point number for floats
+%u	int unsigned decimal
+%e	a floating point number in scientific notation
+%E	a floating point number in scientific notation
+%%	the % symbol
+*/
+
+/**
+ * Source from Geeks for Geeks
+ * %c - For b type.
+%d - For signed integer type.
+%e or %E - For scientific notation of floats.
+%f - For float type.
+%g or %G - For float type with the current precision.
+%i - Unsigned integer
+%ld or %li - Long
+%lf - Double
+%Lf - Long double
+%lu - Unsigned int or unsigned long
+%lli or %lld - Long long
+%llu - Unsigned long long
+%o - Octal representation
+%p - Pointer
+%s - String
+%u - Unsigned int
+%x or %X - Hexadecimal representation
+%n - Prints nothing
+%% - Prints % character
+*/
