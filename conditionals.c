@@ -51,7 +51,17 @@ if(strcmp(k, "") != 0 && strcmp(j, "") != 0){
  * }
 */
 
-
+int z = 1;
+switch(z){
+    case 1:
+    printf("%s\n", "good number");
+    break;
+    case 5:
+    printf("%s\n", "huuuray!");
+    break;
+    default:
+    printf("%s\n", "This input is invalid");
+}
 
 return 0;
 }
