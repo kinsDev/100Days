@@ -1,0 +1,15 @@
+Types
+Variables are used to store data temporarily during program execution.
+Every Variable must have a type. A type specifies the type of data a variable will hold.
+
+Declarations
+variables must be declared. e.g: int height - state that height is a variable of type of int.
+We can have several variables of the same type e.g int height, age, date, price;
+
+Assignment
+A variable can be given a value by means of assignment. e.g height = 22;
+N/B - A varibale needs to be declared before it can be assigned a value
+int height;
+height = 22;
+
+Its important to append a letter "f" to a float value e.g 22.456f, otherwise we might get an error.
