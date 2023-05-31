@@ -24,7 +24,8 @@ program, then see how it’s put together.
 #define FREEZING_PT 32.0f
 #define SCALE_FACTOR (5.0f / 9.0f)
 
-int main(void){
+int main(void)
+{
     float fahrenheit, celsius;
 
     printf("Enter fahrenheit temperature: ");
@@ -35,3 +36,19 @@ int main(void){
 
     return 0;
 }
+
+/**
+ * The statement
+Celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
+converts the Fahrenheit temperature to Celsius. Since FREEZING_PT stands for
+32 . Of and SCALE_FACTOR stands for (5 . Of / 9 . Of ), the compiler sees this
+statement as
+Celsius = (fahrenheit - 32.Of) * (5.Of / 9.Of);
+Defining SCALE_FACTOR to be (5.Of / 9.Of) instead of (5/9) is impor¬
+tant, because C truncates the result when two integers are divided. The value of
+(5 / 9) would be 0, which definitely isn’t what we want.
+The call ofprintf writes the Celsius temperature:
+printf("Celsius equivalent: %.lf\n", Celsius);
+Notice the use of % . If to display celsius with just one digit after the decimal
+point.
+*/
