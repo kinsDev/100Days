@@ -1,0 +1,6 @@
+We'll provide a complete list of escape sequences later: for now, here's a sample:
+
+Alert (bell) \a
+Backspace \b
+New line \n
+Horizontal tab \t
