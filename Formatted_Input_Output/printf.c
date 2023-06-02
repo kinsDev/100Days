@@ -16,7 +16,7 @@ int main(void){
 
 /**
  * Let's lake a closer look at the conversion specifications used in this program:
-%d — Displays i in decimal form, using a minimum amount ofspace.
+%d — Displays i in decimal form, using a minimum amount of space.
 %5d — Displays i in decimal form, using a minimum of five characters.
 Since i requires only two characters, three spaces were added.
 %-5d — Displays i in decimal form, using a minimum of five characters;
