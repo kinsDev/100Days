@@ -10,3 +10,11 @@ point.
 (d) Fixed decimal notation; right-justified in a field of size 6: no digits after the decimal
 point.
 */
+
+#include <stdio.h>
+int main(void){
+    printf("%-8.1e\n", 25);
+    printf("%10.6e\n", 25);
+    printf("%-8.3f\n", 25);
+    printf("%6.0f\n", 25);
+}
