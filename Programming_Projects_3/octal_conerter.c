@@ -12,15 +12,14 @@ see in Chapter 7. so there’s actually an easier way to write this program.)
 #include<stdio.h>
 int main(void)
 {
-    int i;
-    int octal;
+    int n;
 
     printf("Enter a number between 0 and 32767: ");
-    scanf("%5d", &i);
+    scanf("%5d", &n);
 
-    octal = (i / 8) % 10;
-    
-
-    printf("In Octal, your number is: %5d", octal);
+    printf("In Octal, your number is: %05o", n);
     return 0;
 }
+/**
+ * '05', padding leading zeros on the left
+ * for this problem, I have the octal formart C specifier*/
