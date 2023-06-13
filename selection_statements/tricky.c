@@ -20,3 +20,16 @@ int main(void)
     return 0;
 }
 */
+
+
+/*{
+    int j;
+    printf("The value is: %d\n", j++ > 0);
+    return 0;
+}*/
+
+/*{
+    int j;
+    printf("The value is: %d\n", ++j > 0);
+    return 0;
+}*/
