@@ -5,3 +5,18 @@ operators return integer values. For example, the value of the expression (i >= 
 or equal to j. respectively. Tricky coding like this generally isn’t a good idea, how¬
 ever; it makes programs hard to understand.
 */
+#include <stdio.h>
+int main(void)
+{
+    int i = 2, j = 1;
+    printf("The value is: %d\n", (i >= j) + (i == j));
+    return 0;
+}
+
+/**
+ * {
+    int i = 1, j = 2;
+    printf("The value is: %d\n", (i >= j) + (i == j));
+    return 0;
+}
+*/
