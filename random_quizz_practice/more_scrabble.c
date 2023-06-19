@@ -12,11 +12,9 @@ Hint: Use the toupper library function.
 
 #include <stdio.h>
 #include <ctype.h>
-
 int calculateScrabbleValue(char letter)
 {
     int value = 0;
-
     if (strchr("AEILNORSTU", letter) != NULL)
         value = 1;
     else if (strchr("DG", letter) != NULL)
@@ -34,7 +32,6 @@ int calculateScrabbleValue(char letter)
 
     return value;
 }
-
 int main(void)
 {
     char word[100];
@@ -48,8 +45,6 @@ int main(void)
         char letter = toupper(word[i]);
         scrabbleValue += calculateScrabbleValue(letter);
     }
-
     printf("Scrabble value: %d\n", scrabbleValue);
-
     return 0;
 }
