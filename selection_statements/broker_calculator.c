@@ -16,12 +16,33 @@ Commission: $166.00
 The heart of the program is a cascaded if statement that determines which range
 the trade falls into
 */
+#include <stdio.h>
+int main(void)
+{
+    float amount, Commission;
 
-/**
- *  EXPLANATION
- * The following example illustrates the conditional operator:
-int i, j, k;
-i = 1;
-j = 2 ;
-k = i > j ? i : j; /* k is now 2 */
-/*k = (i >= 0 ? i : 0) + j; /* k is now 3 */
+    printf("Enter the value of trade: ");
+    scanf("%f", &amount);
+
+    if(amount < 2500.00f){
+        Commission = 30.00f + 0.017f * amount;
+    }else if(amount > 2500.00f && amount < 6250.00f){
+        Commission = 56.00f + 0.0066f * amount;
+    }else if (amount > 6250.00f && amount < 20000.00f){
+        Commission = 76.00f + 0.0034f * amount;
+    }else if (amount > 20000.00f && amount < 50000.00f){
+        Commission = 100.00f + 0.0022f * amount;
+    }else if (amount > 50000.00f && amount < 500000.00f){
+        Commission = 155.00f + 0.0011f * amount;
+    }else{
+        Commission = 255.00f + 0.0009f * amount;
+    }
+
+    if (Commission < 39.00f){
+        Commission = 39.00f;
+    }
+
+    printf("Commission: $%.2f\n", Commission);
+
+    return 0;
+}
