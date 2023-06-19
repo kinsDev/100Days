@@ -5,7 +5,7 @@
  * }
  */
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main(void)
 {
     int n = -1;
@@ -19,7 +19,7 @@ int main(void)
     }
 
     return 0;
-}
+}*/
 
 /**
  * if (expression){
@@ -29,3 +29,30 @@ int main(void)
  * } else { statement };
  * return 0;
 */
+
+#include <stdio.h>
+int main(void)
+{
+    int grade, input;
+
+    printf("What is your grade out of 5? ");
+    scanf("%d", &grade);
+
+    if(grade > 5){
+        printf("Invalid score");
+    }
+
+    if(grade == 4){
+        printf("Excellent");
+    }else if(grade == 3){
+        printf("Good");
+    }else if(grade == 2){
+        printf("Average");
+    }else if(grade == 1){
+        printf("Poor");
+    }else if(grade == 0){
+        printf("Fail");
+    }
+
+    return 0;
+}
