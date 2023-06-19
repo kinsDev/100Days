@@ -20,3 +20,12 @@ int main(void)
 
     return 0;
 }
+
+/**
+ * if (expression){
+ * statement;
+ * } else if(expression){
+ * statement;
+ * } else { statement };
+ * return 0;
+*/
