@@ -19,7 +19,7 @@ int main(void)
     printf("Enter integers (0 to terminate): ");
     scanf("%d", &n);
 
-    while (n != 1){
+    while (n != 0){
         sum += n;
         scanf("%d", &n);
     }
