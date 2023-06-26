@@ -21,15 +21,15 @@ Here’s the finished program:
 #include <stdio.h>
 int main(void)
 {
-    int i, n;
-
-    printf("Enter number of entries in table: ");
+    int n, i;
+    
+    printf("Enter a number of output of lines you would like: ");
     scanf("%d", &n);
 
     i = 1;
-    while (i <= n){
-        printf("%d\t%d\n", i, i*i);
-        i++; //prevent repetition
+    while(i <= n){
+        printf("%d\t%d\n", i, i * i);
+        i++;
     }
 
     return 0;
