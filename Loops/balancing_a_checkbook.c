@@ -30,7 +30,7 @@ default: print error message; break;
 */
 
 /**
-To illustrate this arrangement, let's develop a program that maintains a checkbook balance. 
+Let's develop a program that maintains a checkbook balance. 
 The program will offer the user a menu of choices: 
 clear the account balance, 
 credit money to the account, 
