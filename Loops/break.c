@@ -5,6 +5,10 @@ either kind of loop.
 
 The break statement can also be used to jump out of a
 while, do, or for loop.
+
+break transfers control just past the end of a loop
+With break, control leaves the loop;
+break can be used in switch statements and loops (while, do, and for),
 */
 
 #include<stdio.h>
