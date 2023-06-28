@@ -9,26 +9,6 @@ denominator. Then divide both the numerator and denominator by the GCD.
 #include <stdio.h>
 int main(void)
 {
-    int n, m, gcd;
-
-    printf("Enter a fraction: ");
-    scanf("%d/%d", &n, &m);
-
-    while(n != 0){
-        gcd = m % n;
-        m = n;
-        n = gcd;
-        n = n / m;
-        m = m / m;
-    }
-    printf("In lowest terms: %d/%d\n", n, m);
-
-    return 0;
-}
-
-#include <stdio.h>
-int main(void)
-{
     int numerator, denominator, gcd;
 
     printf("Enter a fraction: ");
