@@ -43,7 +43,7 @@ int main(void)
         printf("Enter a number: ");
         scanf("%f", &num); // if num entered is greater than 0, we want the program to ask the user to enter another number so that we can test it
     }
-    printf("The largest number entered was %f\n", max);
+    printf("The largest number entered was %.2f\n", max);
 
     return 0;
 }
