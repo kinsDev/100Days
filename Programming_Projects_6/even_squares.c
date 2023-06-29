@@ -7,21 +7,16 @@ between 1 and n. For example, if the user enters 100. the program should print t
 64
 100
 */
-
 #include <stdio.h>
 int main(void)
 {
-    int n, i, square;
+    int n, square, i;
 
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    square = i * i;
-
     for(i = 1; (square = i * i) <= n; i++){
-
-        if (square % 2 == 0)
-        {
+        if(square % 2 == 0){
             printf("%d\n", square);
         }
     }
