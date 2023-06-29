@@ -23,7 +23,7 @@ int main(void)
     scanf("%ld", &n);
 
     while(n != 0){
-        sum += n;
+        sum += n;//we assign n to sum, and then add the current value of n to sum, store that value in sum and so on
         scanf("%ld", &n);
         
     }
