@@ -19,15 +19,15 @@ int main(void)
     
     while((ch = getchar()) != '\n'){
         if(ch != ' '){//
-            total_length++;
-            printf("Total length: %f\n", total_length);
-        }else{ 
-            word_count++;//the loop
-            printf("Total number of words: %f\n", word_count);
+            total_length++;    
+        }else if(ch == ' '){ 
+            word_count++;//the loop    
         }
     }
     word_count++;
     average = total_length / word_count;
+    printf("Total length: %f\n", total_length);
+    printf("Total number of words: %f\n", word_count);
     printf("Average word length: %.1f\n", average);
 
     return 0;
