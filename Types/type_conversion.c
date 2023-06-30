@@ -52,12 +52,28 @@ float f;
 double d;
 long double Id;
 
-i = i + c;       c is converted to int    
-i = i + s;       s is converted to int    
-u = u + i;       i is converted to unsigned int    
-1 = 1 + u;       u is converted to long int    
-ul = ul + 1;     1 is converted to unsigned long int    
-f = f + ul;      ul is converted to float    
-d = d + f;       f is converted to double    
-Id = Id + d;     d is converted to long double    
+i = i + c;       c is converted to int
+i = i + s;       s is converted to int
+u = u + i;       i is converted to unsigned int
+1 = 1 + u;       u is converted to long int
+ul = ul + 1;     1 is converted to unsigned long int
+f = f + ul;      ul is converted to float
+d = d + f;       f is converted to double
+Id = Id + d;     d is converted to long double
+
+
+Conversion During Assignment
+The usual arithmetic conversions don’t apply to assignment. Instead. C follows the
+simple rule that the expression on the right side of the assignment is converted to
+the type of the variable on the left side. If the variable's type is at least as “wide" as
+the expression's, this will work without a snag. For example:
+
+char c;
+int i ;
+float f;
+double d;
+
+i = c;   c is converted to int  
+f = i;   i is converted to float  
+d = f;   f is converted to double  
 */
