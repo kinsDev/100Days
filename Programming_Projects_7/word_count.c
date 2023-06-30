@@ -12,7 +12,7 @@ which it is attached. Display the average word length to one decimal place.
 int main(void)
 {
     float average, total_length = 0;
-    int word_count = 0;//loop through every character till end of line
+    int word_count = 0; // to keep track of the number of words in the sentence.
     char ch;
 
     printf("Enter a sentence: ");
@@ -20,13 +20,15 @@ int main(void)
     while((ch = getchar()) != '\n'){
         if(ch != ' '){//
             total_length++;
+            printf("Total length: %f\n", total_length);
         }else{ 
-            word_count++;//the loop 
+            word_count++;//the loop
+            printf("Total number of words: %f\n", word_count);
         }
     }
     word_count++;
     average = total_length / word_count;
-    printf("Average word length: %.1f", average);
+    printf("Average word length: %.1f\n", average);
 
     return 0;
 }
