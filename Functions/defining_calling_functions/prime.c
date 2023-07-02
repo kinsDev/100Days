@@ -19,13 +19,13 @@ bool is_prime(int n)
 {
     int divisor; //declaration
 
-    if(n <= 1)
+    if(n <= 1)// 1 s not always a prime number
     {
         return false;//parameter 1 is not a prime number
     }
 
-    for(divisor = 2; divisor * divisor <= n; divisor++)
-    {
+    for(divisor = 2; divisor * divisor <= n; divisor++)//to calculate a prime number we always start by dividing from 2
+    { // square of divisor is a way to find whether the square root of n is a prime
         if(n % divisor == 0)
         {
             return false; //parameter is not a prime number because it is divisible by other digit
