@@ -55,6 +55,7 @@ int main(void)
         { 
             float rate_decimal = (rate + j) / 100.00f;//within the rate iteration it is incremented by 1
             float value = initialValue; //each & every rate is divided by 100 to find a decimal value for the rates
+            // we ensure that we start the calculation with the initial investment amount for each combination of year and interest rate.
 
             //compound interest
             for (int k = 0; k < i; k++) //  calculates the compounded interest for the current year and interest rate.
@@ -69,3 +70,45 @@ int main(void)
 
     return 0;
 }
+
+/**
+ * Certainly! Here's an explanation of the code structure in a simple manner:
+
+1. The code starts by including the necessary header file `stdio.h` and defining a constant `NUM_RATES` with a value of 5.
+
+2. The `main()` function is declared and initializes variables `rate`, `years`, `i`, and `j`. It also declares a variable `initialValue` to store the initial investment value.
+
+3. The program prompts the user to enter the interest rate and the number of years using `printf()` and reads the input using `scanf()`.
+
+4. The variable `initialValue` is set to `100.00f`, representing the initial investment amount.
+
+5. The program prints the header row of the table using `printf()` to display the interest rates.
+
+6. The `for` loop iterates `NUM_RATES` times, starting from 0 to `NUM_RATES - 1`. It prints the interest rates by adding the loop index `i` to the initial rate entered by the user.
+
+7. After printing the interest rates, a newline character is printed using `printf()` to move to the next line.
+
+8. The outer `for` loop iterates over the years. It starts from 1 and continues until the specified number of years.
+
+9. Inside the outer loop, the program prints the current year using `printf()`.
+
+10. The inner `for` loop iterates over the different interest rates. It starts from 0 and goes up to `NUM_RATES - 1`.
+
+11. Within the inner loop, a variable `rate_decimal` is calculated by adding the loop index `j` to the initial interest rate and dividing the result by 100. This converts the interest rate to decimal form.
+
+12. A variable `value` is initialized to `initialValue` to hold the calculated value for each combination of year and interest rate.
+
+13. The program calculates the compounded interest by multiplying `value` with `rate_decimal` and adding the result to `value`. This is done `i` times, representing the number of years.
+
+14. After calculating the compounded interest value, the program prints the value with two decimal places using `printf()`.
+
+15. The inner loop continues until all interest rates are processed for the current year.
+
+16. After completing the inner loop, a newline character is printed using `printf()` to move to the next line.
+
+17. The outer loop continues until all years are processed.
+
+18. Finally, the program returns 0 to indicate successful execution.
+
+In summary, the code calculates the compounded interest for different combinations of interest rates and years, and prints the results in a table format. The nested loops iterate over the years and interest rates, perform the necessary calculations, and display the results accordingly.
+*/
