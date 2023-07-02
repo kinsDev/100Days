@@ -38,6 +38,8 @@ When it encounters the definition of average later in the program, the compiler
 notices that the function’s return type is actually double, not int, and so we
 get an error message.
 
-One way to avoid the problem of call-before-definition is to arrange the pro¬
-gram so that the definition of each function precedes all its calls. U
+One way to avoid the problem of call-before-definition is to declare each function before calling it.
+
+A Junction declaration provides the compiler with a brief glimpse at a function
+whose full definition will appear later.
 */
