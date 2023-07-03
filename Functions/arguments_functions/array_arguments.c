@@ -35,7 +35,7 @@ int main(void)
         scanf("%d", &b[j]); // using scanf to read int i to each element of array b
     }
 
-    total = sum_array(b, LEN); // sum_array function is called with the array b and length LEN
+    total = sum_array(b, 50); // sum_array function is called with the array b and length LEN
     // total is used tp print the sum of the array
     printf("Sum of the array: %d\n", total);
 
