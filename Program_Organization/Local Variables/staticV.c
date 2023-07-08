@@ -5,11 +5,13 @@ execution of the program.
 */
 
 //An example
+/*
 void f(void)
 {
-    static int i; /* static local variable */
+    static int i;   static local variable
     ...
 }
+*/
 
 //In a nutshell a static variable is a place to hide information from a function
 //but retains that information for a future function call
