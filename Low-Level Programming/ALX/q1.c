@@ -7,10 +7,10 @@
 unsigned int binary_to_unsigned_integer(const char *binary)
 {
     unsigned int result = 0;
-
+    
     if (!binary)
         return 0;
-
+    
     while (*binary)
     {
         if (*binary == '0')
@@ -26,10 +26,10 @@ unsigned int binary_to_unsigned_integer(const char *binary)
         {
             return 0; // Invalid input character
         }
-
+        
         binary++; // Move to the next character
     }
-
+    
     return result;
 }
 
@@ -47,6 +47,6 @@ int main(void)
     printf("%u\n", n);
     n = binary_to_unsigned_integer("0000000000000000000110010010");
     printf("%u\n", n);
-
+    
     return 0;
 }
