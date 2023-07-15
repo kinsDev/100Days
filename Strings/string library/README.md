@@ -32,5 +32,5 @@ strcpy(str1, str2);    //str1 now contains abcd
 - strncpy is similar to strcpy but has a third argument that limits the number of characters that will be copied. 
 - To copy str2 into strl, we could use the following call of strncpy:
 ```
-strncpy(str1, str2, sizeof(str1));
+strncpy(str1, str2, sizeof(str1)); //size of str1 1 species the size of characters to be copied
 ```
