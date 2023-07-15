@@ -12,7 +12,7 @@ Declaring a character array to have length STR_LEN + 1 doesn't mean that it
 will always contain a string of STR_LEN characters. The length of a string
 depends on the position of the terminating null character, not on the length of the array in which the string is stored. An array of STR_LEN + I characters can hold strings of various lengths, ranging from the empty string to strings of length STR_LEN.
 
-#Initializing string variables
+# Initializing string variables
 A string variable can be intitialized at the same time it's declared:
 char date[8] = "June 14";
 The compiler will pul the characters from "June 14" in the date array, then
@@ -26,7 +26,7 @@ char date3[7] = "June 14";
 There’s no room for the null character, so the compiler makes no attempt to store
 one.
 
-#character arrays vs character pointers
+# character arrays vs character pointers
 Lets compare the declaration
 char date[] = "June 14";             declares date to be an array
 char *date = "June 14";              declares date to be a pointer
