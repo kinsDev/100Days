@@ -34,3 +34,20 @@ strcpy(str1, str2);    //str1 now contains abcd
 ```
 strncpy(str1, str2, sizeof(str1)); //size of str1 1 species the size of characters to be copied
 ```
+
+## The strlen (String Length) Function
+- The strlen function has the following prototype:
+```
+size_t strlen(const char *s);
+
+```
+- strlen returns the length of a string s: the number of characters in s up to.
+but not including, the first null character.
+```
+int len;
+
+len = strlen ("abc")   /* len is now 3 */
+len = strlen("");      /* len is now 0 */
+strcpy(strl, "abc");
+len = strlen(strl);    /* len is now 3 */
+```
