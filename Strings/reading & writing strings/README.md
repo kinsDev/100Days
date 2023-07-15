@@ -92,5 +92,28 @@ one character at a time, these functions provide a greater degree of control tha
   - What character causes the function to stop reading: a new-line character, any
     white-space character, or some other character? Is this character stored in the
     string or discarded?
-  - What should the function do if the input string is too long to store: discard the
-    extra characters or leave them for the next input operation?
+  - What should the function do if the input string is too long to store: discard the extra characters or leave them for the next input operation?
+  
+- Suppose we need a function that doesn't skip white-space characters, stops
+reading at the first new-line character, & discards extra characters. The function might have the following prototypes:
+```
+int read_line(char str[], int n)
+{
+    int i = 0, ch;
+    while((ch = getchar()) != '\n')
+    {
+        if(i < n)
+        {
+            str[i++] = ch;
+        }
+    }
+    str[i] = '\0';
+    return i;
+}
+
+int main(void)
+{
+    /*...*/
+    return 0;
+}
+```
