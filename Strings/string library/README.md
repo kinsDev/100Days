@@ -51,3 +51,37 @@ len = strlen("");      /* len is now 0 */
 strcpy(strl, "abc");
 len = strlen(strl);    /* len is now 3 */
 ```
+
+## The streat (String Concatenation) Function
+- The streat function has the following prototype:
+```
+char *strcat(char *sl, const char *s2);
+
+```
+- streat appends the contents of the string s2 to the end of the string si; it
+returns si (a pointer to the resulting string).
+- Here are some examples ofstreat in action:
+```
+strcpy(strl, "abc");
+strcat(strl, "def"); /* strl now contains "abcdef" */
+
+```
+```
+strcpy(strl, "abc");
+strcpy(str2, "def");
+strcat(strl, strcat (str2, "ghi"));
+/* strl now contains "abcdefghi"; str2 contains "defghi" */
+
+```
+- The strncat function is a safer but slower version of strcat. Like strncpy, it has a third argument that limits the number of characters it will copy.
+- Here’s what a call might look like:
+```
+strncat(strl, str2, sizeof(strl) - strlen(strl) - 1);
+
+```
+## The strcmp (String Comparison) Function
+- The strcmp function has the following prototype:
+```
+int strcmp(const char *sl, const char *s2);
+
+```
