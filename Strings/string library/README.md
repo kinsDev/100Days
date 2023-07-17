@@ -85,3 +85,8 @@ strncat(strl, str2, sizeof(strl) - strlen(strl) - 1);
 int strcmp(const char *sl, const char *s2);
 
 ```
+- strcmp compares the strings si and s2. returning a value less than, equal to, or greater than 0. depending on whether si is less than, equal to, or greater than s2. 
+- For example, to see if strl is less than str2, we’d write:
+```if (strcmp(strl, str2) < 0) /* is strl < str2? */```
+- To test whether strl is less than or equal to str2. we’d write
+```if (strcmp(strl, str2) <= 0) /* is strl <= str2? */```
