@@ -26,3 +26,7 @@ print('\n')
 # sort the list in alphabetical order
 places.sort()
 print(places)
+
+# use sort() to change the list so that its sorted in reverse alphabetical order
+places.sort(reverse = True)
+print(places)
