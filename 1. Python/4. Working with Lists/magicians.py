@@ -13,3 +13,12 @@ magicians = ['john', 'doe', 'monty', 'pep8']
 for magician in magicians:
     print(magician.title() + ", wonderful performance today!")
     print("I can't wait to see you next time, " + magician + "\n")# lets add a new second line of message to our magicians
+
+
+# Doing Something After a for Loop
+#  Let’s write a thank you to the group of magicians as a whole, thanking them for putting on an excellent show.
+magicians = ['john', 'doe', 'monty', 'pep8']
+for magician in magicians:
+    print(magician.title() + ", wonderful performance today!")
+    print("I can't wait to see you next time, " + magician + "\n")
+print("Thank you everyone. That was a great magic show!\n")
