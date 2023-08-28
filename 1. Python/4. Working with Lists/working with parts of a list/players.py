@@ -17,3 +17,17 @@ print(players[-3:])
 
 # slicing the first three players in the roaster
 print(players[:-3])
+print('\n')
+
+
+
+# Looping through a Slice
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print("Here is the first three players on my team: ")
+for player in players[:3]:
+    print(player.title())
+print('\n')
+
+
+
+# Copying a list
