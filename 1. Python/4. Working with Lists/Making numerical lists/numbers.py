@@ -21,3 +21,8 @@ print(numbers)
 # inside the loop every value is squared and placed at a variable called square
 # we append each square to the empty list of numbers
 # and then print out the list called numbers
+
+square = []
+for value in range(1, 11):
+    square.append(value ** 2)
+print(square)
