@@ -27,7 +27,3 @@ print("Here is the first three players on my team: ")
 for player in players[:3]:
     print(player.title())
 print('\n')
-
-
-
-# Copying a list
