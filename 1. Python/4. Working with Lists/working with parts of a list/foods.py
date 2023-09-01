@@ -2,6 +2,10 @@
 my_foods = ["chicken", "beef", "kales", "rice"]
 friend_food = my_foods[:]
 
+# just to show that we have separate lists, we add different foods to diff lists
+my_foods.append("Ugali")
+friend_food.append("fish")
+
 print("My favorite food is: ")
 print(my_foods)
 
