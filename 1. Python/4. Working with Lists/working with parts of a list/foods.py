@@ -6,7 +6,7 @@ friend_food = my_foods[:]
 my_foods.append("Ugali")
 friend_food.append("fish")
 
-print("My favorite food is: ")
+print("My favorite foods are: ")
 print(my_foods)
 
 print("\nMy friend's favorite foods are: ")
